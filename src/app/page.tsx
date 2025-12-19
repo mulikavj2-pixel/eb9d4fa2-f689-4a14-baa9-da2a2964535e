@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
@@ -11,12 +11,12 @@ import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactText from '@/components/sections/contact/ContactText';
 import FooterBaseSocial from '@/components/sections/footer/FooterBaseSocial';
-import { Award, CreditCard, Crown, Facebook, Gem, Heart, HelpCircle, Instagram, Linkedin, Network, ShieldCheck, Sparkles, Star, TrendingUp, Twitter, Users, Zap } from 'lucide-react';
+import { Star, Zap, TrendingUp, Users, Award, ShieldCheck, CreditCard, Sparkles, Crown, Gem, Heart, Network, HelpCircle, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
-export default function LandingPage() {
+export default function AutoDrivePage() {
   return (
     <ThemeProvider
-      defaultButtonVariant="text-stagger"
+      defaultButtonVariant="text-shift"
       defaultTextAnimation="entrance-slide"
       borderRadius="pill"
       contentWidth="medium"
@@ -30,8 +30,8 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleFullscreen
           navItems={[
-            { name: "Home", id: "hero" },
-            { name: "Vehicles", id: "featured-vehicles" },
+            { name: "Home", id: "home" },
+            { name: "Vehicles", id: "vehicles" },
             { name: "About", id: "about" },
             { name: "Contact", id: "contact" },
             { name: "FAQ", id: "faq" }
@@ -52,7 +52,7 @@ export default function LandingPage() {
           imageAlt="Luxury car showcase"
           imagePosition="right"
           buttons={[
-            { text: "Browse Cars", href: "featured-vehicles" },
+            { text: "Browse Cars", href: "vehicles" },
             { text: "Get Quote", href: "contact" }
           ]}
         />
@@ -100,7 +100,7 @@ export default function LandingPage() {
             }
           ]}
           buttons={[
-            { text: "View All Vehicles", href: "featured-vehicles" }
+            { text: "View All Vehicles", href: "vehicles" }
           ]}
         />
       </div>
@@ -196,7 +196,7 @@ export default function LandingPage() {
               quote: "AutoDrive made buying my first car incredibly easy. The financing process was transparent and the sales team was genuinely helpful. Highly recommended!",
               name: "Sarah Johnson",
               role: "New Car Owner",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142911715-g6hxs35w.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142914384-2ryn26s5.jpg",
               imageAlt: "Sarah Johnson"
             },
             {
@@ -212,7 +212,7 @@ export default function LandingPage() {
               quote: "The financing options they offered saved me thousands of dollars. Fair prices, no hidden fees, and a smooth delivery process. Five stars!",
               name: "Emily Rodriguez",
               role: "Premium Car Buyer",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142914384-2ryn26s5.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142911715-g6hxs35w.jpg",
               imageAlt: "Emily Rodriguez"
             },
             {
@@ -228,7 +228,7 @@ export default function LandingPage() {
               quote: "Excellent selection of vehicles at competitive prices. The inspection reports were detailed and honest. Will definitely buy from them again!",
               name: "Jessica Thompson",
               role: "Repeat Customer",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142917238-lv8h4ku5.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142918471-bbsvcgpb.jpg",
               imageAlt: "Jessica Thompson"
             },
             {
@@ -236,7 +236,7 @@ export default function LandingPage() {
               quote: "AutoDrive's commitment to customer satisfaction is genuine. They stood behind their products and went above and beyond. Trustworthy business!",
               name: "Robert Martinez",
               role: "Verified Buyer",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142918471-bbsvcgpb.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142917238-lv8h4ku5.jpg",
               imageAlt: "Robert Martinez"
             }
           ]}
@@ -331,8 +331,8 @@ export default function LandingPage() {
             {
               title: "Vehicles",
               items: [
-                { label: "Browse Cars", href: "featured-vehicles" },
-                { label: "New Arrivals", href: "featured-vehicles" },
+                { label: "Browse Cars", href: "vehicles" },
+                { label: "New Arrivals", href: "vehicles" },
                 { label: "Financing", href: "pricing" }
               ]
             },

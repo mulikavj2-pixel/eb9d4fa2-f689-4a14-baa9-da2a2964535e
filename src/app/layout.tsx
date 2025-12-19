@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: "AutoDrive - Premium Cars with Flexible Financing",
   description: "Discover premium vehicles with transparent pricing, flexible financing, and expert service. Browse our collection of certified cars and drive home today.",
   keywords: "car sales, used cars, new cars, financing, auto dealership, premium vehicles",
+  metadataBase: new URL("https://autodrive.com"),
+  alternates: {
+    canonical: "https://autodrive.com"
+  },
   robots: {
     index: true,
     follow: true
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AutoDrive - Your Trusted Car Dealership",
     description: "Find your perfect car with flexible financing options and transparent pricing.",
+    url: "https://autodrive.com",
     siteName: "AutoDrive",
     type: "website"
   },
