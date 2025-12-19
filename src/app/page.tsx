@@ -262,7 +262,7 @@ export default function LandingPage() {
             "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142925434-jqqa43kj.jpg",
             "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142926572-c7gd8yjt.jpg",
             "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766142927833-hh677jac.png"
-          ]
+          ]}
         />
       </div>
 
