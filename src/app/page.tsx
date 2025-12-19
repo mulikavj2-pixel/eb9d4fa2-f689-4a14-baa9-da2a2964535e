@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
@@ -16,7 +16,7 @@ import { Award, CreditCard, Crown, Facebook, Gem, Heart, HelpCircle, Instagram, 
 export default function LandingPage() {
   return (
     <ThemeProvider
-      defaultButtonVariant="text-shift"
+      defaultButtonVariant="text-stagger"
       defaultTextAnimation="entrance-slide"
       borderRadius="pill"
       contentWidth="medium"
@@ -30,8 +30,8 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleFullscreen
           navItems={[
-            { name: "Home", id: "home" },
-            { name: "Vehicles", id: "vehicles" },
+            { name: "Home", id: "hero" },
+            { name: "Vehicles", id: "featured-vehicles" },
             { name: "About", id: "about" },
             { name: "Contact", id: "contact" },
             { name: "FAQ", id: "faq" }
@@ -52,7 +52,7 @@ export default function LandingPage() {
           imageAlt="Luxury car showcase"
           imagePosition="right"
           buttons={[
-            { text: "Browse Cars", href: "vehicles" },
+            { text: "Browse Cars", href: "featured-vehicles" },
             { text: "Get Quote", href: "contact" }
           ]}
         />
@@ -100,7 +100,7 @@ export default function LandingPage() {
             }
           ]}
           buttons={[
-            { text: "View All Vehicles", href: "vehicles" }
+            { text: "View All Vehicles", href: "featured-vehicles" }
           ]}
         />
       </div>
@@ -331,8 +331,8 @@ export default function LandingPage() {
             {
               title: "Vehicles",
               items: [
-                { label: "Browse Cars", href: "vehicles" },
-                { label: "New Arrivals", href: "vehicles" },
+                { label: "Browse Cars", href: "featured-vehicles" },
+                { label: "New Arrivals", href: "featured-vehicles" },
                 { label: "Financing", href: "pricing" }
               ]
             },
